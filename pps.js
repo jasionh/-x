@@ -10,11 +10,12 @@ hostname =gitee.com
 var body = $response.body;
 var obj = JSON.parse(body);
 
-obj.ruleVersion = 210306;
-obj.showTips = false;
-obj.versionCode = 0;
-obj.noticeId = 202523;
-
+obj.{
+  ruleVersion = 210306;
+  showTips = false;
+  versionCode = 0;
+  noticeId = 202523;
+}
 
 body = JSON.stringify(obj);
 $done({body});
